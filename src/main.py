@@ -3,14 +3,38 @@
 from basic_toolkit import type
 import wx
 
-# 创建一个程序
-app=wx.App()
+class ScreenCap(wx.Frame):
+    def __init__(self):
+        super().__init__(parent=None,title="Screen Cap")
+        panel = wx.Panel(self)
+        sizer=wx.BoxSizer(wx.VERTICAL)
 
-# 创建一个窗口
-frame=wx.Frame(None,title="Screen Cap")
+        # 添加开始按钮
+        begin_btn=  wx.Button(panel, label='开始')
+        begin_btn.Bind(wx.EVT_BUTTON, self.doStart)
+        sizer.Add(begin_btn, 0, wx.ALL|wx.CENTER, 5)
 
-# 显示结果
-frame.Show()
+        # 添加结束按钮
+        stop_btn=  wx.Button(panel, label='结束')
+        stop_btn.Bind(wx.EVT_BUTTON, self.doStop)
+        sizer.Add(stop_btn, 0, wx.ALL|wx.CENTER, 5)
 
-# 运行主程序
-app.MainLoop()
+        panel.SetSizer(sizer)
+        self.Show()
+
+    def doStart(self, event):
+        print("开始")
+
+    def doStop(self, event):
+        print("结束")
+
+
+if __name__ == '__main__':
+
+    # 创建一个程序
+    app=wx.App()
+
+    frame=ScreenCap()
+
+    # 运行主程序
+    app.MainLoop()
