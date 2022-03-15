@@ -9,7 +9,7 @@
 首先需要安装必要的依赖：
 
 ```
-pip install -U wxPython basic-toolkit
+pip install -U wxPython basic-toolkit pillow opencv-python pyautogui
 ```
 
 然后启动运行：
