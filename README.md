@@ -9,7 +9,7 @@
 首先需要安装必要的依赖：
 
 ```
-pip install -U wxPython basic-toolkit pillow opencv-python pyautogui
+pip install -U wxPython basic-toolkit pillow opencv-python pyautogui moviepy
 ```
 
 然后启动运行：
@@ -17,6 +17,14 @@ pip install -U wxPython basic-toolkit pillow opencv-python pyautogui
 ```
 python ./src/main.py
 ```
+
+运行成功以后，就可以看见下面弹框：
+
+<img src='./image/ctrl.png'>
+
+点击按钮 ``` [开始] ``` 就会开始录屏，点击 ``` [结束] ``` 按钮就会停止录屏。
+
+录制的视频就是```./output.avi```文件，双击即可播放。
 
 开源协议
 ---------------------------------------

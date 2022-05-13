@@ -3,4 +3,6 @@
 .project
 node_modules
 .vscode
-output.avi
+*.avi
+*.mp3
+__pycache__
