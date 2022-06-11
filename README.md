@@ -9,7 +9,7 @@
 首先需要安装必要的依赖：
 
 ```
-pip install -U wxPython basic-toolkit pillow opencv-python pyautogui moviepy
+python setup.py install
 ```
 
 然后启动运行：
@@ -30,4 +30,4 @@ python ./src/main.py
 ---------------------------------------
 [MIT](https://github.com/hai2007/screen-cap/blob/master/LICENSE)
 
-Copyright (c) 2022 [hai2007](https://hai2007.gitee.io/sweethome/) 走一步，再走一步。
+Copyright (c) 2022 [hai2007](https://hai2007.github.io/SweetHome/) 走一步，再走一步。
